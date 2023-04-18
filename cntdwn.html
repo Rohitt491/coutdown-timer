@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="./cntdwn.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="text">
+                <h2>Countdown</h2>
+                <p>Hours : Mintues : Seconds</p>
+            </div>
+            <div class="container2">
+                <div class="n-input">
+                    <button id="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <input id="hour" type="number" min="0" max="99" value="0">
+                    <button id="minus"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                </div>
+                <h1>:</h1>
+                <div class="n-input">
+                    <button id="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <input id="min" type="number" min="0" max="99" value="0">
+                    <button id="minus"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                </div>
+                <h1>:</h1>
+                <div class="n-input">
+                    <button id="plus" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+                    <input id="sec" type="number" min="0" max="99" value="0">
+                    <button id="minus"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                </div>
+            </div>
+            <div class="btm_btn">
+                <button id="start">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./cntdwn.js"></script>

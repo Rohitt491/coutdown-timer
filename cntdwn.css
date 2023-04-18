@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.main,
+.container,
+.hours_box,
+.container2,
+.n-input,
+.n-input button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(208, 203, 203);
+}
+
+.container {
+    width: 300px;
+    gap: 15px;
+    height: 200px;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 10px;
+    border: 3.5px solid white;
+
+}
+
+.text {
+    text-align: center;
+}
+
+.container2 {
+    gap: 13px;
+}
+
+.btm_btn button {
+    background-color: rgb(61, 55, 55);
+    border: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.n-input button:hover,
+button:hover {
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+}
+
+input {
+    width: 35px;
+    border: none;
+    outline: none;
+    cursor: default;
+}
+
+input[type="number"] {
+    appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+.n-input {
+    flex-direction: column;
+}
+
+.n-input {
+    box-sizing: border-box;
+}
+
+.n-input button {
+    outline: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #ddd;
+    text-align: center;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.n-input input[type=number] {
+    font-size: 20px;
+    font-family: sans-serif;
+    max-width: 50px;
+    border-width: 0 2px;
+    height: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+}
